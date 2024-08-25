@@ -388,6 +388,8 @@ b, strong {
   border: 2px solid #ddd; /* Adiciona uma borda sólida de 2px com cor cinza */
   border-radius: 10px; /* Adiciona cantos arredondados */
   overflow: hidden; /* Garante que a borda não seja cortada */
+  height: auto; /* Mantém a proporção da imagem */
+
 }
 
 .carousel-item img {
