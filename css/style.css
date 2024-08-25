@@ -390,12 +390,7 @@ b, strong {
   overflow: hidden; /* Garante que a borda não seja cortada */
 }
 
-.carousel-item img {
-  width: 100%; /* Garante que a imagem ocupe a largura total do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  max-height: 400px; /* Define a altura máxima */
-  object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner sem cortar */
-}
+
 
 
 
