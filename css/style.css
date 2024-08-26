@@ -372,6 +372,11 @@ b, strong {
   background: #0d0c15;
   color: #ffffff;
 }
+.dark-mode p {
+  background: #0d0c15;
+  color: #dcdcdc;
+}
+
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
