@@ -18,23 +18,23 @@ body {
 }
 
 .first-letter-highlight h1 {
-  display: inline; /* Garante que cada palavra fique em uma linha */
+  display: inline; 
 }
 
 .first-letter-highlight h1::first-letter {
-  color: #ffc200; /* Cor do destaque */
-  font-size: 150%; /* Tamanho do destaque */
-  font-weight: bold; /* Estilo do destaque */
+  color: #ffc200; 
+  font-size: 150%; 
+  font-weight: bold; 
 }
 
 .highlight {
-  color: #ffc200; /* Ou qualquer cor que desejar */
-  font-weight: bold; /* Ou qualquer outro estilo de fonte que desejar */
+  color: #ffc200; 
+  font-weight: bold; 
 }
 
 .underline {
   text-decoration: underline;
-  text-decoration-color: #ffc200; /* Define a cor do sublinhado */
+  text-decoration-color: #ffc200; 
 }
 
 
@@ -203,6 +203,90 @@ b, strong {
 .animated-item:nth-child(3n+3) {
   animation-delay: 4s;
 }
+
+/* accordion */
+
+.accordion-button {
+  background-color: #474559;
+  color: #eee; 
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffc200; 
+  color: #474559; 
+  border: none;
+}
+
+.accordion-button:not(.collapsed):focus {
+  box-shadow: none;
+  outline: none;
+  background-color: #ffc200;
+  color: #474559;
+}
+
+.accordion-button:active {
+  background-color: #ffc200;
+  color: #474559;
+  box-shadow: none;
+}
+
+.accordion-button:visited {
+  background-color: #474559; 
+  color: #eee;
+}
+
+.accordion-body {
+  font-size: 0.9rem;
+  background-color: #eee; 
+  color: #474559; 
+  padding: 1rem; 
+}
+
+.accordion-body ul {
+  padding-left: 1.5rem;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.accordion-body ul li {
+  margin-bottom: 0.5rem;
+  color: #474559;
+  position: relative;
+  padding-left: 1.5rem; 
+}
+
+.accordion-body ul li::before {
+  content: '✓';
+  color: #ffc200; 
+  position: absolute;
+  left: 0; 
+}
+
+
+.accordion-item .accordion-collapse.collapse.show {
+  background-color: #ffc200; 
+}
+
+.accordion-button::after {
+  content: ""; 
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border: solid #eee;
+  border-width: 0 0.2em 0.2em 0;
+  transform: rotate(45deg); 
+  transition: transform 0.3s; 
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(135deg); 
+  border-color: #474559; 
+}
+
+/* end accordion */
 
 @keyframes BottomTotop {
   0% {
@@ -796,3 +880,5 @@ b, strong {
     opacity: 1;
   }
 }
+
+
